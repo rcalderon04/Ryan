@@ -8,8 +8,6 @@ Instructions for Mid-Term submission and Git Review (10pts):
  - Add a remote to your git repository: git@nird.us:RubyFall2012/YOURREPOSITORYNAME.git
  - Push your changes to the remote
  - After 6pm Tuesday November 13th you will not be able to push to your remote repository (or clone).
- 
-# this is a test
 
  Questions (20pts):
  - What are the three uses of the curly brackets {} in Ruby?
