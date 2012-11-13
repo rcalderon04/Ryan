@@ -11,18 +11,22 @@ Instructions for Mid-Term submission and Git Review (10pts):
 
  Questions (20pts):
  - What are the three uses of the curly brackets {} in Ruby?
-	Three cases when curly brackets are used are for making hashes, when denoting blocks instead of do...end, 
+	Three cases when curly brackets are used are for creating hashes, when denoting blocks instead of do...end, 
 	
  - What is a regular expression and what is a common use for them?
 	Regular expressions are a set of constants and operator symbols that operate over sets of strings. They are commonly used for matching patterns within a String. This can include seeing if the pattern exists in a String, extracting all or partial matched portions of a pattern from a string, and changing the string by replacing the parts that match the pattern.
 	
  - What is the difference between how a String, a symbol, a FixNum, and a Float are stored in Ruby?
+	String: Strings are stored as objects
+	Symbols: once stored are always the same in memory
+	FixNum: are immutable objects so when you say x=5, the integer value is stored directly into the variable x. That's why object_id for both x and 5 will be the same.
+	Float:
 	
  - Are these two statements equivalent? Why or Why Not?
    1. x, y = "hello", "hello"
    2. x = y = "hello"
 
-	These two statements are equivalent in that statement 1. stores 
+	These two statements are equivalent in that statement 1. stores two different versions of "hello" into x and y. Statement 2. stores "hello" into y and then makes x=y. But, when x or y is called for statement 2. Ruby creates two separate copies of "hello" into x and y and thus statements 1 and 2 are equivalent. 
 	
 - What is the difference between a Range and an Array?
 	A range is a interval of a set of values from start to end (1,2,3...a,b,c,d) where an Array could be any set of values and not necessarily in an particular order (d,v,e,d....3,4,2,5,1). 
@@ -31,10 +35,11 @@ Instructions for Mid-Term submission and Git Review (10pts):
 	A Hash would be used over an Array when you need to find items based of key-value pairs. Arrays are good when you need to iterate over a set that is in particular order.
 	
 - What is your favorite thing about Ruby so far?
-	
+	My favorite thing about Ruby is being able to use it with rspec. 
 	
 - What is your least favorite thing about Ruby so far?
-	My least favorite thing in Ruby so far is Blocks. This is probably do to the fact that I don't fully understand it yet and have not capitalized on its use case.
+	My least favorite thing in Ruby so far is Blocks. This is probably do to the fact that I don't fully understand it yet and have not capitalized on its use case. 
+	Update: now having done the midterm, I see how useful blocks are. :)
  
  Programming Problems (10pts each):
  - Write a passing rspec file called even_number_spec.rb that tests a class called EvenNumber.

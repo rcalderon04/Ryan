@@ -1,15 +1,24 @@
 require './Animal.rb'
 class Turkey < Animal
-
-  def initialize(myTurkey)
-    @turkey = myTurkey
-  end
-  
-  def weight
-    @turkey
+  attr_accessor :weight
+  def initialize(turkeyWeight)
+    @weight = turkeyWeight
   end
   
   def gobble_speak(speak)
+    speakOutput = ""
+    splitSpeak = speak.split('.')
+    first = splitSpeak[0].split(' ')
+    second
+    splitSpeak.each do |word|
+      if (word[0].chr == word[0].chr.upcase)
+        speakOutput << "Gooble "
+      else
+        speakOutput << "gooble "
+      end
+      speakOutput.chomp
+    end
+    speakOutput
  #   splitSpeak = speak.split('.')
 #    first = splitSpeak[0].split(' ')
 #    second = splitSpeak[1].split(' ')
