@@ -9,16 +9,21 @@ class Turkey < Animal
     speakOutput = ""
     splitSpeak = speak.split('.')
     first = splitSpeak[0].split(' ')
-    second
-    splitSpeak.each do |word|
+    second = splitSpeak[1].split(' ')
+    first.each do |word|
       if (word[0].chr == word[0].chr.upcase)
         speakOutput << "Gooble "
       else
         speakOutput << "gooble "
       end
-      speakOutput.chomp
     end
+    speakOutput.chomp
+    speakOutput <<  "."
     speakOutput
+    second.each do |word|
+      if ()
+      end
+    end
  #   splitSpeak = speak.split('.')
 #    first = splitSpeak[0].split(' ')
 #    second = splitSpeak[1].split(' ')
